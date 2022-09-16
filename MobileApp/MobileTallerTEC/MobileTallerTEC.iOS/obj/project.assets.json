@@ -1068,11 +1068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\MobileTallerTEC.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\MobileTallerTEC.iOS.csproj",
       "projectName": "MobileTallerTEC.iOS",
-      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\MobileTallerTEC.iOS.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\MobileTallerTEC.iOS.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1093,8 +1093,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj"
+            "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj"
             }
           }
         }

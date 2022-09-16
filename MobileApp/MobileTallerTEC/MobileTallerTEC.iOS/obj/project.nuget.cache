@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FdZhONZ5QVlsObdVSu/H7yqCXrJro/phdJ/I9tLbnjEsnAMKVxPzB2UTSqpPBGY08g7tkDfzdaCeB5P/07bSFQ==",
+  "dgSpecHash": "lgJ9VU6hhIIMcxAa/gk1W8gKm9fE4rwIHRkc+eWXHJbFbLvpO3YWw4DGgOipPpaoU6QqK7yum0eMVfOk7IIWVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\MobileTallerTEC.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.iOS\\MobileTallerTEC.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",

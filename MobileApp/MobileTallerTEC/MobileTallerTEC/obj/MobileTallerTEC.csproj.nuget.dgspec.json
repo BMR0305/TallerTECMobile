@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
         "projectName": "MobileTallerTEC",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

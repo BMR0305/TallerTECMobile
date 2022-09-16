@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MjhV8y7X7prEzhC265q1KmEeZyocG2bhTA2a/75OTJ9vbl42j/LWjN6JP4qDnaq8CdajTt8hwmA7LVTyzAsBZw==",
+  "dgSpecHash": "Ic7e3baObry0dWEQpNVOCVQz0LKjvIGZGD+2YxWplmDJUcXEJu0uBtciz+krLvFoDSG/yj8sEuUOoFPW0z5k0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTEC\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.Android\\MobileTallerTEC.Android.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC.Android\\MobileTallerTEC.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
