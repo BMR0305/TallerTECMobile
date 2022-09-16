@@ -14,6 +14,8 @@ namespace MobileTallerTEC
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            Startup.ConfigureServices();
+
             MainPage = new AppShell();
         }
 

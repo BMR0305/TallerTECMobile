@@ -1272,3 +1272,14 @@ C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\Mobil
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\res\drawable\icon_reg.png
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\res\drawable\icon_bill.png
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.Http.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.Logging.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\Microsoft.Extensions.Primitives.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\System.Buffers.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC.Android\obj\Debug\120\android\assets\System.Memory.dll
