@@ -16,8 +16,14 @@ namespace MobileTallerTEC
             //add services
             services.AddHttpClient<IAppointmentService, ApiAppointmentService>(c =>
             {
-              c.BaseAddress = new Uri("http://10.0.2.2:9968/api/");
+              c.BaseAddress = new Uri("http://10.0.2.2:9968/");
               c.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
+
+            services.AddHttpClient<IBillsService, ApiBillsService>(c =>
+            {
+                c.BaseAddress = new Uri("http://10.0.2.2:9968/");
+                c.DefaultRequestHeaders.Add("Accept", "application/json");
             });
 
             //add viewmodels
