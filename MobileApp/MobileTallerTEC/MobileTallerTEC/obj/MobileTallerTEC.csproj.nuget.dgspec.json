@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\Repositorios\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\Repositorios\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\Repositorios\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
         "projectName": "MobileTallerTEC",
-        "projectPath": "D:\\Proyectos\\Repositorios\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
-        "packagesPath": "C:\\Users\\luisr\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\Repositorios\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\MobileTallerTEC.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\TallerTECMobile\\MobileApp\\MobileTallerTEC\\MobileTallerTEC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Aplicaciones\\Visual Studio\\COMPONENTES\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\luisr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -62,6 +62,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.6, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

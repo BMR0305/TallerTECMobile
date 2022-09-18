@@ -2,18 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileTallerTEC.Views.Registration"             
-             xmlns:vm="clr-namespace:MobileTallerTEC.ViewModels"
-             xmlns:behaviors="clr-namespace:MobileTallerTEC.Behaviors"
              Title="{Binding Title}">
 
-    <ContentPage.BindingContext>
-        <vm:RegistrationViewModel />
-    </ContentPage.BindingContext>
-    
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Placa del vehículo" FontSize="Medium"/>
-            <Entry Text="{Binding License_plate, Mode=TwoWay}" FontSize="Medium" MaxLength="6" ClearButtonVisibility="WhileEditing"
+            <Entry Text="{Binding License_plate, Mode=TwoWay}" FontSize="Medium" MaxLength="7" ClearButtonVisibility="WhileEditing"
                    TextTransform="Uppercase"/>
             <Label Text="Sucursal" FontSize="Medium" />
             <Entry Text="{Binding Office, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"/>

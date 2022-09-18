@@ -12,19 +12,12 @@ namespace MobileTallerTEC
         public static void ConfigureServices()
         {
             var services = new ServiceCollection();
-            //services.AddSingleton<IAppointmentService, InMemoryAppointmentService>();
-            //add services
-            services.AddHttpClient<IAppointmentService, ApiAppointmentService>(c =>
+            services.AddHttpClient<IService, ApiService>(c =>
             {
               c.BaseAddress = new Uri("http://10.0.2.2:9968/");
               c.DefaultRequestHeaders.Add("Accept", "application/json");
             });
 
-            services.AddHttpClient<IBillsService, ApiBillsService>(c =>
-            {
-                c.BaseAddress = new Uri("http://10.0.2.2:9968/");
-                c.DefaultRequestHeaders.Add("Accept", "application/json");
-            });
 
             //add viewmodels
             services.AddTransient<BillingViewModel>();

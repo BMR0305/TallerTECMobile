@@ -4,11 +4,22 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:vm="clr-namespace:MobileTallerTEC.ViewModels"
              x:Class="MobileTallerTEC.Views.LoginPage"
              Shell.NavBarIsVisible="False">
+    
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Label Text="Usuario" FontSize="Medium" />
+            <Entry Text="" FontSize="Medium" ClearButtonVisibility="WhileEditing" Placeholder="Ingrese su usuario"/>
+            <Label Text="Contraseña" FontSize="Medium" />
+            <Entry Text="" FontSize="Medium" ClearButtonVisibility="WhileEditing" Placeholder="Ingrese su contraseña"/>
             <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <Button VerticalOptions="Center" Text="Registrarse" Command="{Binding RegisterCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

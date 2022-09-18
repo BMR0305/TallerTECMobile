@@ -62,3 +62,4 @@ D:\Proyectos\Repositorios\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTaller
 D:\Proyectos\Repositorios\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\refint\MobileTallerTEC.dll
 D:\Proyectos\Repositorios\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\MobileTallerTEC.pdb
 D:\Proyectos\Repositorios\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\ref\MobileTallerTEC.dll
+C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\Views\Register.xaml.g.cs

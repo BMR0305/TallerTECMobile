@@ -1,4 +1,5 @@
 ﻿using MobileTallerTEC.Models;
+using MobileTallerTEC.Services;
 using System;
 using System.Windows.Input;
 using Xamarin.Essentials;
@@ -9,6 +10,7 @@ namespace MobileTallerTEC.ViewModels
 {
     public class RegistrationViewModel : BaseViewModel
     {
+        private readonly IService _service;
         private string client;
         private string license_plate;
         private string office;
@@ -16,10 +18,11 @@ namespace MobileTallerTEC.ViewModels
         private string date;
         private string today;
 
-        public RegistrationViewModel()
+        public RegistrationViewModel(IService service)
         {
             SaveCommand = new Command(OnSave, ValidateSave);
             CancelCommand = new Command(OnCancel);
+            _service = service;
             this.PropertyChanged +=
                 (_, __) => SaveCommand.ChangeCanExecute();
             Title = "Registro de Citas";
@@ -29,7 +32,7 @@ namespace MobileTallerTEC.ViewModels
         private bool ValidateSave()
         {
             bool valid = false;
-            if (!String.IsNullOrWhiteSpace(license_plate) && license_plate.Length == 6
+            if (!String.IsNullOrWhiteSpace(license_plate) && license_plate.Length == 7
                 && !String.IsNullOrWhiteSpace(office)
                 && !String.IsNullOrWhiteSpace(service)
                 && !String.IsNullOrWhiteSpace(date))
@@ -83,17 +86,27 @@ namespace MobileTallerTEC.ViewModels
 
         private async void OnSave()
         {
-            Item newItem = new Item()
+            try
             {
-                Id = Guid.NewGuid().ToString(),
-                Text = License_plate,
-                Description = Service
-            };
+                var appointment = new Appointment
+                {
+                    responsible = "a",
+                    assistant = "a",
+                    licensePlate = License_plate,
+                    service = Service,
+                    client = "a",
+                    office = Office,
+                    date = Date
+                };
 
-            await DataStore.AddItemAsync(newItem);
+                await _service.AddAppointmentAsync(appointment);
 
-            // This will pop the current page off the navigation stack
-            await Shell.Current.GoToAsync("..");
+                await Shell.Current.GoToAsync("..");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

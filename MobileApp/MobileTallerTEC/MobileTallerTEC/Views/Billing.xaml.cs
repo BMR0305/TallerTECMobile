@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobileTallerTEC.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,18 @@ using Xamarin.Forms.Xaml;
 
 namespace MobileTallerTEC.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Billing : ContentPage
     {
+        BillingViewModel _viewModel;
         public Billing()
         {
             InitializeComponent();
+            BindingContext = _viewModel = new BillingViewModel();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            _viewModel.OnAppearing();
         }
     }
 }

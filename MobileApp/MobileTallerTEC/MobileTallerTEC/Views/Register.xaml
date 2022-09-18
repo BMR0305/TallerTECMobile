@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileTallerTEC.Views.Register"             
+             xmlns:vm="clr-namespace:MobileTallerTEC.ViewModels"
+             xmlns:behaviors="clr-namespace:MobileTallerTEC.Behaviors"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:RegisterViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Cédula" FontSize="Medium"/>
+            <Entry Text="{Binding Id, Mode=TwoWay}" FontSize="Medium" MaxLength="9" ClearButtonVisibility="WhileEditing" 
+                   Keyboard="Numeric"/>
+            <Label Text="Name" FontSize="Medium" />
+            <Entry Text="{Binding Name, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"/>
+            <Label Text="User" FontSize="Medium" />
+            <Entry Text="{Binding User, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"/>
+            <Label Text="Email" FontSize="Medium" />
+            <Entry Text="{Binding Email, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"
+                   Keyboard="Email"/>
+            <Label Text="Password" FontSize="Medium" />
+            <Entry Text="{Binding Password, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"
+                   IsPassword="True"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Registrarse" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:MobileTallerTEC.ViewModels"  
              xmlns:model="clr-namespace:MobileTallerTEC.Models"  
              x:Name="BrowseItemsPage">
-
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
@@ -41,4 +41,5 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
     </RefreshView>
+    
 </ContentPage>
