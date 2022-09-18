@@ -23,6 +23,7 @@ namespace MobileTallerTEC
             services.AddTransient<BillingViewModel>();
             services.AddTransient<LoginViewModel>();
             services.AddTransient<RegistrationViewModel>();
+            services.AddTransient<RegisterViewModel>();
 
             serviceProvider = services.BuildServiceProvider();
         }

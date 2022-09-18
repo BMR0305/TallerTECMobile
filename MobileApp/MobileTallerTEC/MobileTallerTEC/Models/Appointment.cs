@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MobileTallerTEC.Models
 {
@@ -11,5 +12,14 @@ namespace MobileTallerTEC.Models
         public string client { get; set; }
         public string office { get; set; }
         public string date { get; set; }
+        public List<Replacements> replacements { get; set; }
+
+    }
+
+    public class Replacements
+    {
+        public string LicensePlate { get; set; }
+        public string Replacement { get; set; }
+
     }
 }

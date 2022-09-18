@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobileTallerTEC.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace MobileTallerTEC.Views
         public Register()
         {
             InitializeComponent();
+            BindingContext = Startup.Resolve<RegisterViewModel>();
         }
     }
 }

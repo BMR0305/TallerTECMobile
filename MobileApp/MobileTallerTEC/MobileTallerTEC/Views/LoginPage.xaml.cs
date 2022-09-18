@@ -15,7 +15,7 @@ namespace MobileTallerTEC.Views
         public LoginPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+            BindingContext = Startup.Resolve<LoginViewModel>();
         }
     }
 }

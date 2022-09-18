@@ -10,14 +10,43 @@
             <Entry Text="{Binding License_plate, Mode=TwoWay}" FontSize="Medium" MaxLength="7" ClearButtonVisibility="WhileEditing"
                    TextTransform="Uppercase"/>
             <Label Text="Sucursal" FontSize="Medium" />
-            <Entry Text="{Binding Office, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"/>
+            <Picker x:Name="picker"
+                Title="Seleccione una sucursal"
+                TitleColor="Black"
+                SelectedItem="{Binding Office, Mode=TwoWay}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Sucursal Cartago Centro</x:String>
+                        <x:String>Oreamuno de Cartago</x:String>
+                        <x:String>Pinares Curridabat</x:String>
+                        <x:String>Rio Oro Santa Ana</x:String>
+                        <x:String>Ciudad de Panamá</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
             <Label Text="Servicio" FontSize="Medium" />
-            <Entry Text="{Binding Service, Mode=TwoWay}" FontSize="Medium" ClearButtonVisibility="WhileEditing"/>
+            <Picker x:Name="picker2"
+                Title="Seleccione un Servicio"
+                TitleColor="Black"
+                SelectedItem="{Binding Service, Mode=TwoWay}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Cambio de aceite</x:String>
+                        <x:String>Cambio de llantas</x:String>
+                        <x:String>Alineado y tramado</x:String>
+                        <x:String>Revision 5k km</x:String>
+                        <x:String>Revision 10k km</x:String>
+                        <x:String>Revision 15k km</x:String>
+                        <x:String>Revision 20k km</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
             <Label Text="Fecha de la cita" FontSize="Medium" />
             <DatePicker MinimumDate = "{Binding Today}" MaximumDate="12/31/2023" Date="{Binding Date, Mode=TwoWay}"  Format="dd/MM/yyy"/>
             <StackLayout Orientation="Horizontal">
                 <Button Text="Registrar Cita" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
+            <Label Text="{Binding Error, Mode=TwoWay}" FontSize="Medium" HorizontalTextAlignment="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

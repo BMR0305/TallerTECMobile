@@ -16,7 +16,8 @@ namespace MobileTallerTEC.Views
         public Billing()
         {
             InitializeComponent();
-            BindingContext = _viewModel = new BillingViewModel();
+            BindingContext = _viewModel = Startup.Resolve<BillingViewModel>();
+ 
         }
         protected override void OnAppearing()
         {

@@ -1,6 +1,7 @@
 ﻿using MobileTallerTEC.Models;
 using MobileTallerTEC.Services;
 using System;
+using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -17,6 +18,7 @@ namespace MobileTallerTEC.ViewModels
         private string service;
         private string date;
         private string today;
+        private string error;
 
         public RegistrationViewModel(IService service)
         {
@@ -28,6 +30,7 @@ namespace MobileTallerTEC.ViewModels
             Title = "Registro de Citas";
             today = DateTime.Today.ToString("MM/dd/yyyy");
             date = DateTime.Today.ToString("MM/dd/yyyy");
+            Error = "";
         }
         private bool ValidateSave()
         {
@@ -75,6 +78,12 @@ namespace MobileTallerTEC.ViewModels
             set => SetProperty(ref date, value);
         }
 
+        public string Error
+        {
+            get => error;
+            set => SetProperty(ref error, value);
+        }
+
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }
 
@@ -86,25 +95,31 @@ namespace MobileTallerTEC.ViewModels
 
         private async void OnSave()
         {
+            List<Replacements> Replacements = new List<Replacements>();
             try
             {
+                Worker Responsible = await _service.GetWorkerRAsync();
+                Worker Assistant = await _service.GetWorkerRAsync();
                 var appointment = new Appointment
                 {
-                    responsible = "a",
-                    assistant = "a",
+                    responsible = Responsible.idNumber.ToString(),
+                    assistant = Assistant.idNumber.ToString(),
                     licensePlate = License_plate,
                     service = Service,
-                    client = "a",
+                    client = UserSingleton.GetInstance().Id,
                     office = Office,
-                    date = Date
+                    date = Date.Substring(0,10),
+                    replacements = Replacements
                 };
 
                 await _service.AddAppointmentAsync(appointment);
 
                 await Shell.Current.GoToAsync("..");
+                Error = "Cita registrada correctamente";
             }
             catch (Exception ex)
             {
+                Error = "No se pudo registrar la cita";
                 Console.WriteLine(ex.Message);
             }
         }
