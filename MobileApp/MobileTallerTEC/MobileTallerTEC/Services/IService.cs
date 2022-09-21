@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 namespace MobileTallerTEC.Services
 {
+    /*
+     * Interfac IService
+     * Interfaz utilizada para la creacion de la clase ApiService
+     */
     public interface IService
     {
         Task AddAppointmentAsync(Appointment appointment);

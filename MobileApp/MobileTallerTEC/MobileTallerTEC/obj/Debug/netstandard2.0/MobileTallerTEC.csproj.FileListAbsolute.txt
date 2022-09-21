@@ -25,11 +25,7 @@ C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\Mobil
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\MobileTallerTEC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\MobileTallerTEC.AssemblyInfoInputs.cache
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\MobileTallerTEC.AssemblyInfo.cs
 C:\Users\Lenovo\Documents\GitHub\TallerTECMobile\MobileApp\MobileTallerTEC\MobileTallerTEC\obj\Debug\netstandard2.0\MobileTallerTEC.csproj.CoreCompileInputs.cache

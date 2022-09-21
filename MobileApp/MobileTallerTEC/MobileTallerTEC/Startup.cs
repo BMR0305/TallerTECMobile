@@ -6,9 +6,17 @@ using MobileTallerTEC.ViewModels;
 
 namespace MobileTallerTEC
 {
+    /*
+     * Clase Startup
+     * Clase que realiza distintas instanciaciones y configuraciones para el inicio de la aplicacion
+     */
     public static class Startup
     {
+        //Clase proveedora de servicios
         private static IServiceProvider serviceProvider;
+        /*
+         * Funcion que configura y ata los distintos servicios y ViewModels
+         */
         public static void ConfigureServices()
         {
             var services = new ServiceCollection();
@@ -27,7 +35,9 @@ namespace MobileTallerTEC
 
             serviceProvider = services.BuildServiceProvider();
         }
-
+        /*
+         * Funcion que resuelve y retorna un ViewModel atado a un servicio
+         */
         public static T Resolve<T>() => serviceProvider.GetService<T>();
     }
 }

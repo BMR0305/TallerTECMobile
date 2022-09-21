@@ -6,14 +6,18 @@ using Xamarin.Forms.Xaml;
 
 namespace MobileTallerTEC
 {
+    /*
+     * Clase App
+     * Clase asociada al App.xaml 
+     */
     public partial class App : Application
     {
-
+        /*
+         * Inicializador de la clase
+         */
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             Startup.ConfigureServices();
 
             MainPage = new AppShell();

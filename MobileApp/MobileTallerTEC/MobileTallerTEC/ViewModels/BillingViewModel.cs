@@ -14,13 +14,24 @@ using System.Threading.Tasks;
 
 namespace MobileTallerTEC.ViewModels
 {
+    /*
+     * Clase BillingViewModel
+     * Clase padre: BaseViewModel
+     * Clase con la lógica asociada al Billing.xaml
+     */
     public class BillingViewModel : BaseViewModel
     {
         private Bill _selectedBill;
-        private readonly IService _service;
-        public ObservableCollection<Bill> Bills { get; }
-        public Command LoadBillsCommand { get; }
 
+        //Instancia de servicio con el cual se realizan GETS y POST de la API
+        private readonly IService _service;
+        //Lista observable de facturas de un cliente
+        public ObservableCollection<Bill> Bills { get; }
+        //Comando para cargar las facturas de un cliente
+        public Command LoadBillsCommand { get; }
+        /*
+         * Inicializador de la clase, asignacion de valores iniciales
+         */
         public BillingViewModel(IService service)
         {
             Title = "Facturación";
@@ -28,7 +39,11 @@ namespace MobileTallerTEC.ViewModels
             LoadBillsCommand = new Command(async () => await ExecuteLoadItemsCommand());
             _service = service;
         }
-
+        /*
+         * Funcion que ejecuta un cargado de las facturas de un cliente
+         * Se realiza un get utilizando el id del cliente para retornar las facturas
+         * Estas facturas se cargan a la lista observable
+         */
         async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
@@ -51,7 +66,7 @@ namespace MobileTallerTEC.ViewModels
                 IsBusy = false;
             }
         }
-
+        //Funcion para la inicializacion de variables en aparicion
         public void OnAppearing()
         {
             IsBusy = true;

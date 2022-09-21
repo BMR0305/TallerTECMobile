@@ -8,11 +8,17 @@ using Xamarin.Forms;
 
 namespace MobileTallerTEC.ViewModels
 {
+    /*
+     * Clase BaseViewModel
+     * Clase padre
+     */
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-        
+        //Variable para conocer si está ocupado o no para la recarga
         bool isBusy = false;
+        /*
+         * Getters y Setters 
+         */
         public bool IsBusy
         {
             get { return isBusy; }

@@ -11,8 +11,15 @@ using Xamarin.Forms.Xaml;
 namespace MobileTallerTEC.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+    /*
+     * Clase Registration
+     * Clase asociada al Registration.xaml 
+     */
     public partial class Registration : ContentPage
     {
+        /*
+         * Inicializador de la clase
+         */
         public Registration()
         {
             InitializeComponent();

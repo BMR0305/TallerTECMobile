@@ -1,28 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+       Instanciacion del content page de Billing y sus dependencias
+-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileTallerTEC.Views.Billing"             
              xmlns:model="clr-namespace:MobileTallerTEC.Models"  
              xmlns:local="clr-namespace:MobileTallerTEC.ViewModels"
              Title="{Binding Title}">
-    
+
     <!--
-      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
-      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
-    -->
+       Instanciacion del contenido del RefreshVuew y sus objetos asociados
+-->
     <RefreshView x:DataType="local:BillingViewModel" Command="{Binding LoadBillsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+        <!--
+                Colection view de las facuras
+            -->
         <CollectionView x:Name="BillsListView"
                 ItemsSource="{Binding Bills}"
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Bill">
+                        <!--
+                            Label titulo
+                        -->
                         <Label
                             Text="Detalle de factura: "
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="27">
                         </Label>
+                        <!--
+                            Label de la licencia
+                        -->
                         <Label
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
@@ -34,17 +45,23 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
+                        <!--
+                            Label del servicio
+                        -->
                         <Label
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16">
                             <Label.FormattedText>
                                 <FormattedString>
-                                    <Span Text="Servicio brindadp: " />
+                                    <Span Text="Servicio brindado: " />
                                     <Span Text="{Binding service}"/>
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
+                        <!--
+                            Label del costo
+                        -->
                         <Label
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
@@ -56,6 +73,9 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
+                        <!--
+                            Label del mecanico
+                        -->
                         <Label
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
@@ -67,6 +87,9 @@
                                 </FormattedString>
                             </Label.FormattedText>
                         </Label>
+                        <!--
+                            Label de la fecha
+                        -->
                         <Label
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 

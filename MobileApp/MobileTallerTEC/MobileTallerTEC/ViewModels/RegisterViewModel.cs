@@ -7,16 +7,31 @@ using static Xamarin.Essentials.Permissions;
 
 namespace MobileTallerTEC.ViewModels
 {
+    /*
+     * Clase RegisterViewModel
+     * Clase padre: BaseViewModel
+     * Clase con la lógica asociada al Register.xaml
+     */
     public class RegisterViewModel : BaseViewModel
     {
+        //Instancia de servicio con el cual se realizan GETS y POST de la API
         private readonly IService _service;
+        //String asociado al id del cliente
         private string id;
+        //String asociado al nombre del cliente
         private string name;
+        //String asociado al usuario del cliente
         private string user;
+        //String asociado al correo del cliente
         private string email;
+        //String asociado a la contrasena del cliente
         private string password;
+        //String asociado al error/succses de un registro
         private string error;
 
+        /*
+         * Inicializador de la clase, asignacion de valores iniciales
+         */
         public RegisterViewModel(IService service)
         {
             SaveCommand = new Command(OnSave, ValidateSave);
@@ -28,6 +43,9 @@ namespace MobileTallerTEC.ViewModels
             Error = "";
 
         }
+        /*
+         * Funcion que valida si los espacios no estan vacios y cumplen con las restricciones para el registro
+         */
         private bool ValidateSave()
         {
             bool valid = false;
@@ -43,6 +61,9 @@ namespace MobileTallerTEC.ViewModels
 
             return valid;
         }
+        /*
+         * Getters y Setters 
+         */
         public string Id
         {
             get => id;
@@ -83,7 +104,11 @@ namespace MobileTallerTEC.ViewModels
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
         }
-
+        /*
+         * Funcion asociada al boton de registrar un cliente
+         * Encargada de hacer POST
+         * Puede tener exito haciendo el post o puede mostrar en pantalla que la cita ya existe
+         */
         private async void OnSave()
         {
             List<ClientAddress> Address = new List<ClientAddress>();
